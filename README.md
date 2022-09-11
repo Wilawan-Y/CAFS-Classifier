@@ -8,7 +8,7 @@ If you add words to this dictionary or correct words in your version of this dic
 
 # Getting started
 ```python
-pip install https://github.com/Wilawan-Y/EconomicFinancial-NE-Extractor.git
+pip install  git+https://github.com/Wilawan-Y/EconomicFinancial-NE-Extractor.git
 ```
 
 # Usage:
