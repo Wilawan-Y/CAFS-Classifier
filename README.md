@@ -10,13 +10,23 @@ If you add words to this dictionary or correct words in your version of this dic
 ```python
 from NE_Extractor import Extraction
 
-text = 'Crypto Exchange Bithumb Hacked Again, Lost EOS and XRP from Hot Wallets'
+text = 'biden budget nominee absolutely backs u.s. minimum wage hike'
 Tag = Extraction(text)
-Tag.tagging()
-
-print(Tag.get_key())
-print(Tag.get_NEtag())
+Tag.tagging() # Name Entity Extraction module
 ```
+```python
+print(Tag.get_keys()) # Get Name Entity words
+```
+['biden', 'u.s.', 'minimum wage']<br/>
+```python
+print(Tag.get_NEtag()) # Get Name Entity Tagged
+```
+['PER', 'GPE', 'IND'] <br/>
+
+```python
+print(Tag.get_tokens()) # Get word tokenization based on domain-specific dictionary
+```
+['biden', 'budget', 'nominee', 'absolutely', 'backs', 'u.s.', 'minimum wage', 'hike'] <br/>
 # Getting started
 
 # Dependencies:
