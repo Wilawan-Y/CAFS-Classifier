@@ -7,8 +7,5 @@ setup(name='NE_Extracter',
       author_email='wilawan_y@cmu.ac.th',
       license='gnu',
       url="https://github.com/Wilawan-Y/EconomicFinancial-NE-Extractor",
-      install_requires=[
-          'marisa_trie==0.7.7',
-      ],
-	  packages=find_packages(),
+	  packages=find_packages()
       )
