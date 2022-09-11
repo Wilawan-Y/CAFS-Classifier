@@ -6,6 +6,11 @@ Economic and Financial Named Entity is a domain-specific dictionary for named en
 # Instructions:
 If you add words to this dictionary or correct words in your version of this dictionary, we would appreciate it if you could send these additions and corrections to us (wilawan_y@cmu.ac.th) for consideration in a subsequent version. All submissions will be reviewed and approved by the current maintainer.
 
+# Getting started
+```python
+pip install https://github.com/Wilawan-Y/EconomicFinancial-NE-Extractor.git
+```
+
 # Usage:
 ```python
 from NE_Extractor import Extraction
@@ -27,7 +32,6 @@ print(Tag.get_NEtag()) # Get Name Entity Tagged
 print(Tag.get_tokens()) # Get word tokenization based on domain-specific dictionary
 ```
 ['biden', 'budget', 'nominee', 'absolutely', 'backs', 'u.s.', 'minimum wage', 'hike'] <br/>
-# Getting started
 
 # Dependencies:
 - marisa_trie <br/>
@@ -35,4 +39,4 @@ print(Tag.get_tokens()) # Get word tokenization based on domain-specific diction
 - pickle <br/>
 - re
 # Reference:
-Yathongkhum, W., Treeratpituk, P., Bootkrajang, J., Laosiritaworn, Y., and Chaijaruwanich, J., “Economic and Financial News Classification Based on Category-Associated Feature Set,” 
+- Yathongkhum, W., Treeratpituk, P., Bootkrajang, J., Laosiritaworn, Y., and Chaijaruwanich, J., “Economic and Financial News Classification Based on Category-Associated Feature Set,” 
