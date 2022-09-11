@@ -7,9 +7,13 @@ Economic and Financial Named Entity is a domain-specific dictionary for named en
 If you add words to this dictionary or correct words in your version of this dictionary, we would appreciate it if you could send these additions and corrections to us (wilawan_y@cmu.ac.th) for consideration in a subsequent version. All submissions will be reviewed and approved by the current maintainer.
 
 # Getting started
+## install package with pip
 ```python
 pip install  git+https://github.com/Wilawan-Y/EconomicFinancial-NE-Extractor.git
 ```
+## dowload and unzipped file 
+- download the whole code in a zip file 
+- Extract or unzipped file into a convenient location on your computer and start working on it.
 
 # Usage:
 ```python
