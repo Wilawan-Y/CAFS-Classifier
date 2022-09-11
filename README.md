@@ -39,4 +39,4 @@ print(Tag.get_tokens()) # Get word tokenization based on domain-specific diction
 - pickle <br/>
 - re
 # Reference:
-- Yathongkhum, W., Treeratpituk, P., Bootkrajang, J., Laosiritaworn, Y., and Chaijaruwanich, J., “Economic and Financial News Classification Based on Category-Associated Feature Set,” 
+- Wilawan Yathongkhum, Department of Computer Science, Faculty of Science, Chiangmai University.
