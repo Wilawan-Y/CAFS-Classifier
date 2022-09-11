@@ -9,8 +9,7 @@ setup(name='NE_Extracter',
       url="https://github.com/Wilawan-Y/EconomicFinancial-NE-Extractor",
       install_requires=[
           'nltk',
-          'marisa_trie==0.7.7',
-          'pickle',
+          'marisa_trie==0.7.7'
       ],
 	  packages=find_packages()
       )
