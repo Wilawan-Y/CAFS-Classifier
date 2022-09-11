@@ -11,8 +11,9 @@ If you add words to this dictionary or correct words in your version of this dic
 # Getting started
 
 # Dependencies:
-marisa_trie <br/>
-nltk <br/>
-
+- marisa_trie <br/>
+- nltk <br/>
+- pickle <br/>
+- 
 # Reference:
 Yathongkhum, W., Treeratpituk, P., Bootkrajang, J., Laosiritaworn, Y., and Chaijaruwanich, J., “Economic and Financial News Classification Based on Category-Associated Feature Set,” 
