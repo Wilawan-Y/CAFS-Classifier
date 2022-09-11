@@ -7,7 +7,16 @@ Economic and Financial Named Entity is a domain-specific dictionary for named en
 If you add words to this dictionary or correct words in your version of this dictionary, we would appreciate it if you could send these additions and corrections to us (wilawan_y@cmu.ac.th) for consideration in a subsequent version. All submissions will be reviewed and approved by the current maintainer.
 
 # Usage:
+```python
+from NE_Extractor import Extraction
 
+text = 'Crypto Exchange Bithumb Hacked Again, Lost EOS and XRP from Hot Wallets'
+Tag = Extraction(text)
+Tag.tagging()
+
+print(Tag.get_key())
+print(Tag.get_NEtag())
+```
 # Getting started
 
 # Dependencies:
