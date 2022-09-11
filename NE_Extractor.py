@@ -25,9 +25,16 @@ class Extraction:
         self.wtag = []
         self.class_tag = []
         self.text = text
-        self.tokenizer = MWETokenizer(mwes=None, separator=' ')
-        for w in self.NE_dict.keys():
-            self.tokenizer.add_mwe(str(w))
+
+    def tokenize(self):
+	    return self.text.split(',')
+
+    def token_dict(self):
+	    tokenizer = MWETokenizer(mwes=None, separator=' ')
+	    for w in self.NE_dict.keys():
+		    word = str(w).rstrip().split()
+		    tokenizer.add_mwe(word)
+	    return tokenizer
 
 
     def replace_char(self):
@@ -77,18 +84,24 @@ class Extraction:
         return wordlist
 
     def tagging(self):
+        self.token_list = []
+        rgx = re.compile('[^a-zA-Z]')
         text = self.replace_char()
         split = text.lower().rstrip().split()
         word = self.remove_suffix(split)
-        tokens = self.tokenizer.tokenize(word)
-        tokens = [t for t in tokens if t != '' and t not in stop_words]
-        for w in tokens:
+        tokenizer = self.token_dict()
+        tokens = tokenizer.tokenize(word)
+        self.tokens = [t for t in tokens if t != '' and t not in stop_words]
+        for w in self.tokens:
             if self.NE_dict.get(w) != None:
                 self.wtag.append(w)
                 self.class_tag.append(self.NE_dict[w])
+            self.token_list.append(w)
 
+    def get_tokens(self):
+        return self.token_list
 
-    def get_key(self):
+    def get_keys(self):
         return self.wtag
 
     def get_NEtag(self):
