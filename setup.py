@@ -10,7 +10,6 @@ setup(name='NE_Extracter',
       install_requires=[
           'nltk',
           'marisa_trie==0.7.7',
-          're==2.2.1',
           'pickle',
       ],
 	  packages=find_packages()
