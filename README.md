@@ -14,6 +14,6 @@ If you add words to this dictionary or correct words in your version of this dic
 - marisa_trie <br/>
 - nltk <br/>
 - pickle <br/>
-- 
+- re
 # Reference:
 Yathongkhum, W., Treeratpituk, P., Bootkrajang, J., Laosiritaworn, Y., and Chaijaruwanich, J., “Economic and Financial News Classification Based on Category-Associated Feature Set,” 
