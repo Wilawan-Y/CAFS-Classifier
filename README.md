@@ -4,7 +4,7 @@ The domain-specific dictionary for named entity recognition in economic and fina
 ![alt text](https://github.com/Wilawan-Y/EconomicFinancial-NE-Extractor/blob/main/entity.jpg?raw=true)
 
 # Instructions:
-
+If you add words to this dictionary or correct words in your version of this dictionary, we would appreciate it if you could send these additions and corrections to us (wilawan_y@cmu.ac.th) for consideration in a subsequent version. All submissions will be reviewed and approved by the current maintainer.
 
 # Usage:
 
