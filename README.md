@@ -11,6 +11,8 @@ The domain-specific dictionary for named entity recognition in economic and fina
 # Getting started
 
 # Dependencies:
+marisa_trie <br/>
+nltk <br/>
 
 # Reference:
 Yathongkhum, W., Treeratpituk, P., Bootkrajang, J., Laosiritaworn, Y., and Chaijaruwanich, J., “Economic and Financial News Classification Based on Category-Associated Feature Set,” 
