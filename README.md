@@ -49,10 +49,11 @@ print(Tag.get_tokens()) # Get word tokenization based on domain-specific diction
 print(Tag.get_keys()) # Get Name Entity words
 print(Tag.get_NEtag()) # Get Name Entity Tagged
 ```
+```
 ['u.s.', 'coffee', 'roasters', 'weigh', 'price', 'increases', 'cite', 'shipping', 'inflation'] <br/>
 ['u.s.', 'coffee', 'inflation'] <br/>
 ['GPE', 'CMD', 'IND'] <br/>
-
+```
 ## News Categorization
 ```python
 Category = Classify(Tag.get_NEtag(),Tag.get_tokens(),model,vectorizer)
@@ -64,9 +65,10 @@ print("Hybrid Clssification: ", Category.hybrid_classify()) # Get classification
 X = vectorizer.transform(Tag.get_tokens())
 print("SVM Baseline Clssification Result: ", model.predict(X)[0])
 ```
+```
 CAFS Clssification:  commodities <br/>
 Hybrid Clssification:  commodities <br/>
 SVM Baseline Clssification:  stocks <br/>
-
+```
 # Reference:
 - Wilawan Yathongkhum, Department of Computer Science, Faculty of Science, Chiangmai University.
