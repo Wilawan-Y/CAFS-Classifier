@@ -18,11 +18,23 @@ pip install  git+https://github.com/Wilawan-Y/CAFS-Classifier.git
 - Extract or unzipped file into a convenient location on your computer and start working on it.
 
 # Usage:
+## prepare additional usage files
 ```python
-from NE_Extractor import Extraction
+from CAFS import Extraction, Classify
+import pickle
 
+def tokenize(text):
+    return text.split(',')
+
+NE_dict = pickle.load(open('NE.dict', 'rb'))
+remove_key = pickle.load(open('remove.list', 'rb'))
+vectorizer = pickle.load(open('vectorizer.vec', 'rb'))
+model = pickle.load(open('svm.model', 'rb'))
+```
+## Name Entity Extraction
+```python
 text = 'biden budget nominee absolutely backs u.s. minimum wage hike'
-Tag = Extraction(text)
+Tag = Extraction(text,NE_dict,remove_key)
 Tag.tagging() # Name Entity Extraction module
 ```
 ```python
