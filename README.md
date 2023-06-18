@@ -45,13 +45,13 @@ text = 'biden budget nominee absolutely backs u.s. minimum wage hike'
 Tag = Extraction(text,NE_dict,remove_key)
 Tag.tagging() # Name Entity Extraction module
 
+print(Tag.get_tokens()) # Get word tokenization based on domain-specific dictionary
 print(Tag.get_keys()) # Get Name Entity words
 print(Tag.get_NEtag()) # Get Name Entity Tagged
-print(Tag.get_tokens()) # Get word tokenization based on domain-specific dictionary
 ```
+['biden', 'budget', 'nominee', 'absolutely', 'backs', 'u.s.', 'minimum wage', 'hike'] <br/>
 ['biden', 'u.s.', 'minimum wage']<br/>
 ['PER', 'GPE', 'IND'] <br/>
-['biden', 'budget', 'nominee', 'absolutely', 'backs', 'u.s.', 'minimum wage', 'hike'] <br/>
 
 ## News Categorization
 ```python
