@@ -16,7 +16,7 @@ pip install  git+https://github.com/Wilawan-Y/CAFS-Classifier.git
 ## dowload and unzipped file 
 - download the whole code in a zip file 
 - Extract or unzipped file into a convenient location on your computer and start working on it.
-- 
+  
 ## Dependencies:
 - marisa_trie <br/>
 - nltk <br/>
