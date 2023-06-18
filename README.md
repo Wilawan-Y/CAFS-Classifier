@@ -4,7 +4,7 @@ Economic and Financial Entity is a domain-specific dictionary for named entity r
 ![alt text](https://github.com/Wilawan-Y/EconomicFinancial-NE-Extractor/blob/main/entity.jpg?raw=true)
 
 # Category-Associated Feature Set (CAFS) Classifier
-We introducing the use of economics and financial entities as a representative feature for economic and financial news, then delivers the classifiers based on the category-associated feature set. Moreover, the use of CAFC with the existing text classification baselines can improves out-of-domain news classification performances.  <br/>
+We introducing the use of economics and financial entities as a representative feature for economic and financial news, then delivers the classifiers based on the category-associated feature set. Moreover, the use of CAFS with the existing text classification baselines can improves out-of-domain news classification performances.  <br/>
 # Instructions:
 If you add words to this dictionary or correct words in your version of this dictionary, we would appreciate it if you could send these additions and corrections to us (wilawan_y@cmu.ac.th) for consideration in a subsequent version. All submissions will be reviewed and approved by the current maintainer.
 
