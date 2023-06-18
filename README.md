@@ -58,7 +58,7 @@ print(Tag.get_NEtag()) # Get Name Entity Tagged
 Category = Classify(Tag.get_NEtag(),Tag.get_tokens(),model,vectorizer)
 
 print("CAFS Clssification: ", Category.cafs_rules()) # Get classification result from CAFS Clasifier
-print("Hybrid Clssification: ", cate.hybrid_classify()) # Get classification result from Hybrid Approach
+print("Hybrid Clssification: ", Category.hybrid_classify()) # Get classification result from Hybrid Approach
 
 # SVM Baseline Clasifier
 X = vectorizer.transform(Tag.get_tokens())
