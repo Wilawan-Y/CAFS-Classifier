@@ -3,7 +3,7 @@ Economic and Financial Entity is a domain-specific dictionary for named entity r
 
 ![alt text](https://github.com/Wilawan-Y/EconomicFinancial-NE-Extractor/blob/main/entity.jpg?raw=true)
 
-# Category-Associated Feature Classifier (CAFC)
+# Category-Associated Feature Set (CAFS) Classifier
 We introducing the use of economics and financial entities as a representative feature for economic and financial news, then delivers the classifiers based on the category-associated feature set. Moreover, the use of CAFC with the existing text classification baselines can improves out-of-domain news classification performances.  <br/>
 # Instructions:
 If you add words to this dictionary or correct words in your version of this dictionary, we would appreciate it if you could send these additions and corrections to us (wilawan_y@cmu.ac.th) for consideration in a subsequent version. All submissions will be reviewed and approved by the current maintainer.
@@ -11,7 +11,7 @@ If you add words to this dictionary or correct words in your version of this dic
 # Getting started
 ## install package with pip
 ```python
-pip install  git+https://github.com/Wilawan-Y/EconomicFinancial-NE-Extractor.git
+pip install  git+https://github.com/Wilawan-Y/CAFS-Classifier.git
 ```
 ## dowload and unzipped file 
 - download the whole code in a zip file 
@@ -43,6 +43,8 @@ print(Tag.get_tokens()) # Get word tokenization based on domain-specific diction
 - marisa_trie <br/>
 - nltk <br/>
 - pickle <br/>
-- re
+- regex <br/>
+- operator <br/>
+- scikit-learn <br/>
 # Reference:
 - Wilawan Yathongkhum, Department of Computer Science, Faculty of Science, Chiangmai University.
