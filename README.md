@@ -65,7 +65,7 @@ X = vectorizer.transform(Tag.get_tokens())
 print("SVM Baseline Clssification Result: ", model.predict(X)[0])
 ```
 CAFS Clssification:  commodities <br/>
-Hybrid Clssification:  scommodities <br/>
+Hybrid Clssification:  commodities <br/>
 SVM Baseline Clssification:  stocks <br/>
 
 # Reference:
