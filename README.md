@@ -50,9 +50,9 @@ print(Tag.get_keys()) # Get Name Entity words
 print(Tag.get_NEtag()) # Get Name Entity Tagged
 ```
 ```
-['u.s.', 'coffee', 'roasters', 'weigh', 'price', 'increases', 'cite', 'shipping', 'inflation'] <br/>
-['u.s.', 'coffee', 'inflation'] <br/>
-['GPE', 'CMD', 'IND'] <br/>
+['u.s.', 'coffee', 'roasters', 'weigh', 'price', 'increases', 'cite', 'shipping', 'inflation']
+['u.s.', 'coffee', 'inflation']
+['GPE', 'CMD', 'IND']
 ```
 ## News Categorization
 ```python
@@ -66,9 +66,9 @@ X = vectorizer.transform(Tag.get_tokens())
 print("SVM Baseline Clssification Result: ", model.predict(X)[0])
 ```
 ```
-CAFS Clssification:  commodities <br/>
-Hybrid Clssification:  commodities <br/>
-SVM Baseline Clssification:  stocks <br/>
+CAFS Clssification:  commodities
+Hybrid Clssification:  commodities
+SVM Baseline Clssification:  stocks
 ```
 # Reference:
 - Wilawan Yathongkhum, Department of Computer Science, Faculty of Science, Chiangmai University.
