@@ -66,7 +66,7 @@ print("SVM Baseline Clssification Result: ", model.predict(X)[0])
 ```
 CAFS Clssification:  economy <br/>
 Hybrid Clssification:  stocks <br/>
-SVM Baseline Clssification:  stock <br/>
+SVM Baseline Clssification:  stocks <br/>
 
 # Reference:
 - Wilawan Yathongkhum, Department of Computer Science, Faculty of Science, Chiangmai University.
