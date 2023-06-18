@@ -64,9 +64,9 @@ print("Hybrid Clssification: ", Category.hybrid_classify()) # Get classification
 X = vectorizer.transform(Tag.get_tokens())
 print("SVM Baseline Clssification Result: ", model.predict(X)[0])
 ```
-[CAFS Clssification:  economy]<br/>
-[Hybrid Clssification:  stocks] <br/>
-[SVM Baseline Clssification:  stock] <br/>
+CAFS Clssification:  economy <br/>
+Hybrid Clssification:  stocks <br/>
+SVM Baseline Clssification:  stock <br/>
 
 # Reference:
 - Wilawan Yathongkhum, Department of Computer Science, Faculty of Science, Chiangmai University.
