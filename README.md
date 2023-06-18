@@ -41,7 +41,7 @@ model = pickle.load(open('svm.model', 'rb'))
 ```
 ## Name Entity Extraction
 ```python
-text = 'biden budget nominee absolutely backs u.s. minimum wage hike'
+text = 'U.S. coffee roasters weigh price increases, cite shipping inflation'
 Tag = Extraction(text,NE_dict,remove_key)
 Tag.tagging() # Name Entity Extraction module
 
@@ -49,9 +49,9 @@ print(Tag.get_tokens()) # Get word tokenization based on domain-specific diction
 print(Tag.get_keys()) # Get Name Entity words
 print(Tag.get_NEtag()) # Get Name Entity Tagged
 ```
-['biden', 'budget', 'nominee', 'absolutely', 'backs', 'u.s.', 'minimum wage', 'hike'] <br/>
-['biden', 'u.s.', 'minimum wage']<br/>
-['PER', 'GPE', 'IND'] <br/>
+['u.s.', 'coffee', 'roasters', 'weigh', 'price', 'increases', 'cite', 'shipping', 'inflation'] <br/>
+['u.s.', 'coffee', 'inflation'] <br/>
+['GPE', 'CMD', 'IND'] <br/>
 
 ## News Categorization
 ```python
@@ -64,8 +64,8 @@ print("Hybrid Clssification: ", Category.hybrid_classify()) # Get classification
 X = vectorizer.transform(Tag.get_tokens())
 print("SVM Baseline Clssification Result: ", model.predict(X)[0])
 ```
-CAFS Clssification:  economy <br/>
-Hybrid Clssification:  stocks <br/>
+CAFS Clssification:  commodities <br/>
+Hybrid Clssification:  scommodities <br/>
 SVM Baseline Clssification:  stocks <br/>
 
 # Reference:
