@@ -16,6 +16,14 @@ pip install  git+https://github.com/Wilawan-Y/CAFS-Classifier.git
 ## dowload and unzipped file 
 - download the whole code in a zip file 
 - Extract or unzipped file into a convenient location on your computer and start working on it.
+- 
+## Dependencies:
+- marisa_trie <br/>
+- nltk <br/>
+- pickle <br/>
+- regex <br/>
+- operator <br/>
+- scikit-learn <br/>
 
 # Usage:
 ## prepare additional usage files
@@ -36,27 +44,29 @@ model = pickle.load(open('svm.model', 'rb'))
 text = 'biden budget nominee absolutely backs u.s. minimum wage hike'
 Tag = Extraction(text,NE_dict,remove_key)
 Tag.tagging() # Name Entity Extraction module
-```
-```python
-print(Tag.get_keys()) # Get Name Entity words
-```
-['biden', 'u.s.', 'minimum wage']<br/>
-```python
-print(Tag.get_NEtag()) # Get Name Entity Tagged
-```
-['PER', 'GPE', 'IND'] <br/>
 
-```python
+print(Tag.get_keys()) # Get Name Entity words
+print(Tag.get_NEtag()) # Get Name Entity Tagged
 print(Tag.get_tokens()) # Get word tokenization based on domain-specific dictionary
 ```
+['biden', 'u.s.', 'minimum wage']<br/>
+['PER', 'GPE', 'IND'] <br/>
 ['biden', 'budget', 'nominee', 'absolutely', 'backs', 'u.s.', 'minimum wage', 'hike'] <br/>
 
-# Dependencies:
-- marisa_trie <br/>
-- nltk <br/>
-- pickle <br/>
-- regex <br/>
-- operator <br/>
-- scikit-learn <br/>
+## News Categorization
+```python
+Category = Classify(Tag.get_NEtag(),Tag.get_tokens(),model,vectorizer)
+
+print("CAFS Clssification: ", Category.cafs_rules()) # Get classification result from CAFS Clasifier
+print("Hybrid Clssification: ", cate.hybrid_classify()) # Get classification result from Hybrid Approach
+
+# SVM Baseline Clasifier
+X = vectorizer.transform(Tag.get_tokens())
+print("SVM Baseline Clssification Result: ", model.predict(X)[0])
+```
+[CAFS Clssification:  economy]<br/>
+[Hybrid Clssification:  stocks] <br/>
+[SVM Baseline Clssification:  stock] <br/>
+
 # Reference:
 - Wilawan Yathongkhum, Department of Computer Science, Faculty of Science, Chiangmai University.
