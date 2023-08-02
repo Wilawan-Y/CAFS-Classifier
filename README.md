@@ -1,7 +1,7 @@
 # Economic and Financial Entity
 Economic and Financial Entity is a domain-specific dictionary for named entity recognition in the economic and financial domain. It's suitable for uses in named entities extraction or any tasks that are proposed for a specific term in economics and financial domain. This dictionary is maintained by the Data Science Group in the Department of Computer Science, Faculty of Science, Chiangmai University. Although we do our best, we cannot guarantee the relevance and accuracy of every entry in this dictionary. We intend to continually update the dictionary by correcting existing entries and by adding new ones. The details about our twelve economics and financial entities are described as follows. <br/>
 
-![alt text](https://github.com/Wilawan-Y/EconomicFinancial-NE-Extractor/blob/main/entity.jpg?raw=true)
+![alt text](https://github.com/Wilawan-Y/CAFS-Classifier/blob/main/entity.jpg?raw=true)
 
 # Category-Associated Feature Set (CAFS) Classifier
 We introducing the use of economics and financial entities as a representative feature for economic and financial news, then delivers the classifiers based on the category-associated feature set. Moreover, the use of CAFS with the existing text classification baselines can improves out-of-domain news classification performances.  <br/>
