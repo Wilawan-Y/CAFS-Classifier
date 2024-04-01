@@ -6,7 +6,7 @@ Economic and Financial Entity is a domain-specific dictionary for named entity r
 # Category-Associated Feature Set (CAFS) Classifier
 We introducing the use of economics and financial entities as a representative feature for economic and financial news, then delivers the classifiers based on the category-associated feature set. Moreover, the use of CAFS with the existing text classification baselines can improves out-of-domain news classification performances.  <br/>
 # Instructions:
-If you add words to this dictionary or correct words in your version of this dictionary, we would appreciate it if you could send these additions and corrections to us (wilawan_y@cmu.ac.th) for consideration in a subsequent version. All submissions will be reviewed and approved by the current maintainer.
+If you add words to this dictionary or correct words in your version of this dictionary, we would appreciate it if you could send these additions and corrections to us (yathongkhum.wan@gmail.com) for consideration in a subsequent version. All submissions will be reviewed and approved by the current maintainer.
 
 # Getting started
 ## install package with pip
@@ -71,4 +71,4 @@ Hybrid Clssification:  commodities
 SVM Baseline Clssification:  stocks
 ```
 # Reference:
-- Wilawan Yathongkhum, Department of Computer Science, Faculty of Science, Chiangmai University.
+- Yathongkhum W. , Laosiritaworn Y. , Bootkrajang J. , Treeratpituk P. , Chaijaruwanich J. Economic and financial news hybrid-classification based on category-associated feature set. Intelligent Data Analysis. 28:185-201. 2024
