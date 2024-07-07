@@ -43,6 +43,6 @@ if __name__ == '__main__':
 		  'pandas==1.5.3',
 		  'regex',
 		  'operator',
-	      'scikit-learn==1.2.2'
+	      'scikit-learn==1.5.0'
       ]
       )
