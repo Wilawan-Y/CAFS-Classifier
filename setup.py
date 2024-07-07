@@ -3,12 +3,12 @@ import subprocess
 
 # List of additional packages to check and install if needed
 ADDITIONAL_PACKAGES = [
-    'nltk==3.8.1',
+    'nltk',
     'marisa_trie==0.8.0',
     'pandas==1.5.3',
     'regex',
-	'operator',
-	'scikit-learn==1.5.0'
+    'operator',
+    'scikit-learn==1.5.0'
 ]
 
 # Check if the package is installed
@@ -38,11 +38,11 @@ if __name__ == '__main__':
       license='gnu',
       url="https://github.com/Wilawan-Y/CAFS-Classifier",
       install_requires=[
-          'nltk==3.8.1',
+          'nltk',
           'marisa_trie==0.8.0',
-		  'pandas==1.5.3',
-		  'regex',
-		  'operator',
-	      'scikit-learn==1.5.0'
+	  'pandas==1.5.3',
+	  'regex',
+	  'operator',
+	  'scikit-learn==1.5.0'
       ]
       )
